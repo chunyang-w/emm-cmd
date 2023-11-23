@@ -38,3 +38,7 @@ Please ensure that you have key registered, and your account have sufficient cre
 ```shell
 emm <your_missing_command>
 ```
+
+after this, hopefully you will see a table of commands that you are looking for, with explanation.
+
+Please use your arrow key to select and run.
