@@ -1,4 +1,4 @@
-# EMM - what is the correct spell of the command?
+# 🐠 EMM - what is the correct spell of the command?
 
 All of us have been there, we are trying to write a command, but we are not sure what is the correct spelling of the command - "emm, what is that command again?"
 
@@ -10,7 +10,7 @@ Here is what it will return:
 
 ![Res](https://raw.githubusercontent.com/chunyang-w/chunyang-w.github.io/pic/202311232309039.webp)
 
-## Installation
+## ⚙️ Installation
 
 ```python
 pip install emm-cmd
@@ -18,13 +18,13 @@ pip install emm-cmd
 
 ... and you are good to go!
 
-## Usage
+## 🔧 Usage
 
-### Authentication
+### 🔐 Authentication
 
 If you are using for the first time, you will need to run the following command after installation:
 
-```python
+```shell
 spt set_auth <your_open_ai_key>
 ```
 
@@ -33,6 +33,8 @@ If you have not registered for an open ai key, you will need to register [here](
 Please ensure that you have key registered, and your account have sufficient credits to use the API.
 
 
-### Command
+### 💬 Command
 
-```python
+```shell
+emm <your_missing_command>
+```
