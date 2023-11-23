@@ -1,6 +1,6 @@
 # EMM - what is the correct spell of the command?
 
-All of use have been there, we are trying to write a command, but we are not sure what is the correct spelling of the command - "emm, what is that command again?"
+All of us have been there, we are trying to write a command, but we are not sure what is the correct spelling of the command - "emm, what is that command again?"
 
 Cool things is that, we can now use AI to help us to find the correct command.
 
