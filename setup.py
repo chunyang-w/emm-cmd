@@ -4,8 +4,10 @@ with open('requirements.txt') as f:
     required = f.read().splitlines()
 
 setup(
-    name='emm',
+    name='emm-cmd',
     version='1.0',
+    author="Chunyang",
+    description="AI command line assistant.",
     packages=find_packages(),
     entry_points={
         'console_scripts': [
@@ -13,4 +15,5 @@ setup(
         ],
     },
     install_requires=required,
+    python_requires='>=3.6',
 )
