@@ -12,7 +12,11 @@ Here is what it will return:
 
 ## Installation
 
+```python
+pip install emm-cmd
+```
 
+... and you are good to go!
 
 ## Usage
 

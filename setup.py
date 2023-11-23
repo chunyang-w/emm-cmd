@@ -5,7 +5,7 @@ with open('requirements.txt') as f:
 
 setup(
     name='emm-cmd',
-    version='1.0',
+    version='1.1',
     author="Chunyang",
     description="AI command line assistant.",
     packages=find_packages(),
