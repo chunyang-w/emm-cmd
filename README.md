@@ -8,7 +8,7 @@ Just try: `emm "what is the command to list all files in a directory?"`
 
 Here is what it will return:
 
-![Res](https://raw.githubusercontent.com/chunyang-w/chunyang-w.github.io/pic/202311232309039.webp)
+![](https://raw.githubusercontent.com/chunyang-w/chunyang-w.github.io/pic/202311232356431.webp)
 
 ## ⚙️ Installation
 
