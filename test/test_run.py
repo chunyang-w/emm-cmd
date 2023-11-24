@@ -1,4 +1,4 @@
-from emm.query.query import Query
+from emm.query.query import Query  # noqa
 
 question = "What is the best way to install python packages?"
 
