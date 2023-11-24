@@ -1,4 +1,4 @@
-# 🐠 EMM - what is the correct spell of the command?
+# 🐠 EMM - what is the correct spell of that command again?
 
 All of us have been there, we are trying to write a command, but we are not sure what is the correct spelling of the command - "emm, what is that command again?"
 
