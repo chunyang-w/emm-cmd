@@ -25,7 +25,7 @@ pip install emm-cmd
 If you are using for the first time, you will need to run the following command after installation:
 
 ```shell
-spt set_auth <your_open_ai_key>
+emm set_auth <your_open_ai_key>
 ```
 
 If you have not registered for an open ai key, you will need to register [here](https://beta.openai.com/account/api-keys).
