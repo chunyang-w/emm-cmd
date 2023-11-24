@@ -4,7 +4,7 @@ All of us have been there, we are trying to write a command, but we are not sure
 
 Cool things is that, we can now use AI to help us to find the correct command.
 
-Just try: `emm "what is the command to list all files in a directory?"`
+Just try: `emm "what is the command to find all files start with 'data'?"`
 
 Here is what it will return:
 
