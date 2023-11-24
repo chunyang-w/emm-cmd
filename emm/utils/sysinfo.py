@@ -15,7 +15,7 @@ class SysInfo():
         self.architecture = platform.architecture()
         self.release = platform.release()
         self.shell = os.environ.get('SHELL')
-        self.using_powershell = get_parent_process_name() == "powershell.exe"
+        self.using_powershell = "powershell" in get_parent_process_name()
 
     @property
     def info(self):
