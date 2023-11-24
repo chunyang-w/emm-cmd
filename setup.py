@@ -1,4 +1,5 @@
 from setuptools import setup, find_packages
+from emm.config import __version__
 
 with open('requirements.txt') as f:
     required = f.read().splitlines()
@@ -9,7 +10,7 @@ with open('README.md', encoding='utf-8') as f:
 
 setup(
     name='emm-cmd',
-    version='1.1',
+    version=__version__,
     author="Chunyang",
     description="AI command line assistant.",
     packages=find_packages(),
