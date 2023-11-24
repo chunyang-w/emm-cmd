@@ -1,11 +1,15 @@
 import typer
 import asyncio
 import subprocess
+
 from rich import print
 from typing_extensions import Annotated
-from emm.query.query import Query
-from emm.ui.selector import get_user_choice
+
 from emm.utils.config import Config
+from emm.query.query import Query
+from emm.chat.chat import Chat
+from emm.ui.selector import get_user_choice
+from emm.ui.answer import get_user_answer
 
 app = typer.Typer()
 
@@ -30,13 +34,10 @@ def main(
     """
     if set_auth:
         Config().write_config({"openai_key": set_auth})
-        print(
-            "OpenAI API key set to: ",
-            Config().get_config_value("openai_key")
-        )
         return
     if chat:
-        print("chat mode under construction")
+        res = asyncio.run(Chat().get_res(query))
+        get_user_answer(res)
     else:
         if (query == "Nothing"):
             print("Hi, I am a command line assistant.")
