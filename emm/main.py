@@ -10,6 +10,8 @@ from emm.query.query import Query
 from emm.chat.chat import Chat
 from emm.ui.selector import get_user_choice
 from emm.ui.answer import get_user_answer
+from emm.config import __version__
+from art import text2art
 
 app = typer.Typer()
 
@@ -22,6 +24,8 @@ def main(
         )] = "Nothing",
     chat: Annotated[
         bool, typer.Option(help="Use chat mode")] = False,
+    version: Annotated[
+        bool, typer.Option(help="show version")] = False,
     set_auth: Annotated[
         str, typer.Argument(
             help="Set OpenAI API key")] = None,
@@ -32,6 +36,10 @@ def main(
     --chat: enable chat mode.
     --set_auth: set OpenAI API key.
     """
+    if version:
+        print(text2art("EMM-CMD"))
+        print("emm v", __version__)
+        return
     if set_auth:
         Config().write_config({"openai_key": set_auth})
         return
@@ -40,8 +48,11 @@ def main(
         get_user_answer(res)
     else:
         if (query == "Nothing"):
-            print("Hi, I am a command line assistant.")
-            print("Please tell me how can I help :-)")
+            print(text2art("EMM-CMD"))
+            print("[blue bold]EMM-CMD: A command line assistant.")
+            print("[green bold]Try:")
+            print("\temm \"how to list all files in this dir\"")
+            print()
         else:
             print("[blue underline]Searching for the correct command ...")
             res = asyncio.run(Query().get_res(query))
